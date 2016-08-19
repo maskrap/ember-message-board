@@ -1,0 +1,11 @@
+{ "questions": [{
+  "title": "Does any word rhyme with orange?",
+  "author": "Sam Park",
+  "topic":"Fruits"
+  }],
+  "answers": [{
+    "name": "Bob Dole",
+    "answer": "Your mother",
+    "question": "Does any word rhyme with orange?"
+    }]
+}
