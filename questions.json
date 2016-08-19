@@ -2,10 +2,23 @@
   "title": "Does any word rhyme with orange?",
   "author": "Sam Park",
   "topic":"Fruits"
+}, {
+  "title": "Does any word rhyme with banana?",
+  "author": "Jesus Shuttlesworth",
+  "topic":"Yellow Fruit"
+}, {
+  "title": "Does any word rhyme with banana?",
+  "author": "Jesus Shuttlesworth",
+  "topic":"Fruit"
+
   }],
   "answers": [{
     "name": "Bob Dole",
     "answer": "Your mother",
     "question": "Does any word rhyme with orange?"
-    }]
+  }, {
+    "name": "Bill Clinton",
+    "answer": "Panana",
+    "question": "Does any word rhyme with banana?"
+  }]
 }
