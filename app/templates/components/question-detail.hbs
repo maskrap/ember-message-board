@@ -1,8 +1,8 @@
 <div class="question-body">
-  <h5 class="category">{{question.question}}</h5>
+  <h5 class="category">{{question.questionTitleView}}</h5>
   <hr>
   <div class="by-line">
-    <h6 class="author">{{question.author}}</h6>
+    <h6 class="author">{{question.questionAuthorView}}</h6>
     <h6 class="timestamp">{{question.topic}}</h6>
   </div>
   <div class="body-copy">
@@ -16,18 +16,3 @@
     <li><h4>{{answer.name}} says</h4> <p>{{answer.answer}}</p></li>
   {{/each}}
 </ul>
-
-<h3>Add a answer</h3>
-
-<form>
-  <div class="form-group">
-    <label for="name">Name</label>
-    {{input value=name id="name"}}
-  </div>
-  <div class="form-group">
-    <label for="answer">Answer</label>
-    {{input value=answer id="answer"}}
-  </div>
-  <button {{action 'saveAnswer'}}>Add a Answer</button>
-
-</form>
