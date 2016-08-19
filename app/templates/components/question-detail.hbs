@@ -1,14 +1,17 @@
 <div class="question-body">
-  <h5 class="category">{{question.questionTitleView}}</h5>
+  <img src="{{question.imageURL}}" alt="{{question.titleListView}}" class="detail-view-image">
+  <h5 class="category">{{question.category}}</h5>
+  <h3 class="list-view-title">{{question.titleDetailView}}</h3>
   <hr>
   <div class="by-line">
-    <h6 class="author">{{question.questionAuthorView}}</h6>
-    <h6 class="timestamp">{{question.topic}}</h6>
+    <h6 class="author">{{question.author}}</h6>
   </div>
   <div class="body-copy">
     {{question.bodyCopy}}
   </div>
 </div>
+
+
 
 <h3>Posted Answers:</h3>
 <ul>

@@ -3,18 +3,23 @@
   <div>
     <form>
       <div class="form-group">
-        <label for="questionTitleView">Question</label>
-        {{input value=questionTitleView id="questionTitleView"}}
+        <label for="titleListView">List View Title</label>
+        {{input value=titleListView id="titleListView"}}
       </div>
 
       <div class="form-group">
-        <label for="questionAuthorView">Detail View Title</label>
-        {{input value=questionAuthorView id="questionAuthorView"}}
+        <label for="titleDetailView">Detail View Title</label>
+        {{input value=titleDetailView id="titleDetailView"}}
       </div>
 
       <div class="form-group">
-        <label for="topic">Topic</label>
-        {{input value=topic id="topic"}}
+        <label for="category">Category</label>
+        {{input value=category id="category"}}
+      </div>
+
+      <div class="form-group">
+        <label for="author">Author</label>
+        {{input value=author id="author"}}
       </div>
 
       <button {{action 'save'}}>Save</button>

@@ -1,15 +1,18 @@
 { "questions": [{
-  "questionTitleView": "Does any word rhyme with orange?",
-  "questionAuthorView": "Sam Park",
-  "topic": "Fruits"
+  "titleListView": "Does any word rhyme with orange?",
+  "titleDetailView": "I wonder...",
+  "author": "Sam Park",
+  "category": "Fruits"
 }, {
-  "questionTitleView": "Does any word rhyme with banana?",
-  "questionAuthorView": "Jesus Shuttlesworth",
-  "topic": "Yellow Fruit"
+  "titleListView": "Does any word rhyme with banana?",
+  "titleDetailView": "Who knows?",
+  "author": "Jesus Shuttlesworth",
+  "category": "Yellow Fruit"
 }, {
-  "questionTitleView": "Does any word rhyme with banana?",
-  "questionAuthorView": "Jesus Shuttlesworth",
-  "topic": "Fruit"
+  "titleListView": "Does any word rhyme with banana?",
+  "titleDetailView": "Jesus Shuttlesworth",
+  "author": "Motherbear",
+  "category": "Pizza"
 
   }],
   "answers": [{

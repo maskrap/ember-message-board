@@ -1,0 +1,346 @@
+html {
+    font-size: 22px;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+    font-family: proxima-nova-alt,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.page {
+    color: #333;
+    font-size: 20px;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+* {
+	box-sizing:border-box;
+}
+
+a {
+  text-decoration: none;
+  color: steelblue;
+}
+@mixin flexbox() {
+  display: -webkit-flex;
+   display: flex;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+   /* You can set flex-wrap and flex-direction individually */
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-flex-wrap: wrap;
+   flex-wrap: wrap;
+   /* Or do it all in one line with flex flow */
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap;
+   /* tweak the where items line up on the row */
+   /* valid values are: flex-start, flex-end, space-between, space-around, stretch */
+   -webkit-align-content: flex-end;
+   align-content: flex-end;
+}
+
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex:  $values;
+  -webkit-flex:  $values;
+  -ms-flex:  $values;
+  flex:  $values;
+}
+
+@mixin order($val) {
+  -webkit-box-ordinal-group: $val;
+  -moz-box-ordinal-group: $val;
+  -ms-flex-order: $val;
+  -webkit-order: $val;
+  order: $val;
+}
+
+.wrapper {
+  @include flexbox();
+  max-width: 1200px;
+  padding: 0 20px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.list-block {
+  @include flex(1);
+  width: 350px;
+  height:auto;
+  margin:10px 10px 13px 10px;
+    img {
+      width: 100%;
+      display: block;
+    }
+}
+
+.list-view-title {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.45em;
+    text-decoration: none;
+    -webkit-transition: color .2s linear;
+    transition: color .2s linear;
+    color: #333;
+    margin: 0;
+    padding: .9em 0 .45em;
+    height: 100px;
+}
+.category-container {
+  position: relative;
+}
+
+.category {
+    display: block;
+    position: absolute;
+    top:10px;
+    left:10px;
+}
+
+.image-overlay-text {
+    background-image: -webkit-linear-gradient(top,rgba(0,0,0,.35) 0,rgba(0,0,0,.35) 5%,rgba(0,0,0,0) 100%);
+    background-image: linear-gradient(to bottom,rgba(0,0,0,.35) 0,rgba(0,0,0,.35) 5%,rgba(0,0,0,0) 100%);
+    font-family: proxima-nova-alt,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 600;
+    color: #FFF;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 7px 12px 24px;
+    position: absolute;
+    text-align: left;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    text-transform: uppercase;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.by-line {
+    font-weight: 400;
+    font-size: 14px;
+    border-top: 1px solid #e8e8e8;
+    color: #979797;
+    padding-top: .5em;
+    position: relative;
+}
+
+.author {
+    color: #979797;
+    vertical-align: top;
+}
+
+.header {
+	display:flex;
+	position:relative;
+	flex:1 0 100%;
+	flex-wrap:wrap; // must be there to allow the navigation to go next line
+	background-color:#fff;
+  align-items: baseline;
+    h2 {
+      margin-right: 20px;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 500;
+      font-size: 1rem;
+      font-style: italic;
+      color:#537888;
+    }
+    h3 {
+      font-family: 'Raleway', sans-serif;
+      font-size: .9rem;
+      font-weight: 300;
+      font-style: italic;
+      color:#4b8ba7;
+    }
+
+  	@media all and (min-width:30em){
+  		border-bottom:1px solid #eee;
+  	}
+}
+
+
+.logo {
+	position:relative;
+	z-index:902;
+	display:flex;
+	flex:2 0 auto;
+	justify-content:flex-start;
+	align-items:center;
+	padding:0;
+  flex-grow: 2;
+	border-bottom:1px solid #eee;
+	text-decoration:none;
+
+	@media all and (min-width:30em) {
+
+		flex:1 0 auto;
+		justify-content:center;
+
+	}
+}
+
+
+.navigation-mobile {
+	background-color:#fff;
+	position:relative;
+	z-index:902;
+	display:flex;
+	flex:1 1 auto;
+	justify-content:center;
+
+	@media all and (min-width:30em){
+
+		display:none;
+		visibility:hidden;
+	}
+}
+
+.navigation-mobile a {
+
+	border-left:1px solid #eee;
+	border-bottom:1px solid #eee;
+	display:flex;
+	flex:1 0 auto; //at 100% this caused IE11 to suck
+	justify-content:center;
+	align-items:flex-start; //this also affects the pseudo element
+	position:relative;
+	padding:1em;
+	font-size:1em;
+	z-index:991;
+	width:100%;
+	color:#111;
+	text-decoration:none;
+	cursor:pointer;
+	transition:background-color 0.4s ease-in-out;
+
+	&:before {
+		content:" ";
+		display:flex;
+		flex:0 0 2em;
+		height:1.5em;
+		background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/22318/icon_MobileMenu_black_2.svg") no-repeat 0 0;
+		justify-content:flex-start;
+		align-items:flex-start;
+	}
+
+	&:hover,
+	&:active,
+	&:focus {
+
+		background-color:#eee;
+		color:#666;
+
+	}
+
+}
+
+.navigation-container {
+	display:flex;
+	flex:1 0 5rem;
+  max-width: 1200px;
+
+	@media all and (min-width:30em) {
+		flex:1 1 90%;
+		flex-direction:row;
+		justify-content:flex-end;
+
+	}
+
+}
+
+.navigation {
+
+	display:block;
+	position:absolute;
+	z-index:900;
+	width:100%;
+	transition:transform 0.4s ease-in-out;
+	transform:translateY(-100%);
+
+	@media all and (min-width:30em) {
+		transform:translateY(0);
+		position:relative;
+		display:flex;
+		flex:1 0 auto;
+		flex-direction:row;
+		justify-content:flex-end;
+	}
+}
+
+.navigation.navigation-open {
+	transform:translateY(0);
+}
+
+.navigation-item {
+	display:block;
+	width:100%;
+	border-bottom:1px solid #eee;
+
+	@media all and (min-width:30em){
+		border-bottom:none;
+		display:flex;
+		flex-wrap:nowrap;
+		flex: 0 0 auto;
+		width:auto;
+	}
+
+}
+.navigation-item a {
+	display:block;
+	width:100%;
+	padding:1em 1.5em;
+	text-align:center;
+	text-decoration:none;
+  color: #979797;
+  background-color: transparent;
+  font-size: .53em;
+  padding: 0 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+	&:hover {
+
+	}
+}
+
+.navigation-item.social a {
+  padding: 0px 2px;
+}
+.navigation-item.explore a {
+  padding-left: 3px;
+}
+.navigation-item.about a {
+  padding-right: 3px;
+  border-left: 1px solid #eee;
+}
+
+.explore-icon, .carat-down-icon {
+  color: #979797;
+  font-size: .6em;
+}
+
+.carat-down-icon {
+  margin-right: 20px;
+}
+
+a [class*=" icon-"], a [class^=icon-] {
+    display: inline-block;
+}
+
+[class*=" icon-"], [class^=icon-] {
+    font-size: 1.5em;
+    border-radius: 100px;
+    background-color: #979797;
+    margin-top: -7px;
+    line-height: 1.9;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+
+}

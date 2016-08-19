@@ -1,12 +1,10 @@
 {{#link-to 'question' question.id}}
-  <div class="container">
-    {{#link-to 'question' question.id}}
-      <span class="category-container">{{question.questionTitleView}}</span>
-      <span class="author">{{question.questionAuthorView}}</span>
-      <span class="timestamp">{{question.topic}}</span>
-    {{/link-to}}
+  <div class="list-block">
+    <span class="category-container"><h5 class="category image-overlay-text">{{question.category}}</h5></span>
+    <img src="{{question.listImageURL}}" alt="{{question.titleListView}}" class="list-view-image">
+    <h3 class="list-view-title">{{question.titleListView}}</h3>
+    <div class="by-line">
+      <span class="author">{{question.author}}</span>
+    </div>
   </div>
-
-  {{update-question question=question update="update"}}
-  <button {{action 'delete' question}}>Delete</button>
 {{/link-to}}

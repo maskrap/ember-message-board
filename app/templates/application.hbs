@@ -1,11 +1,20 @@
 <div class="page">
   <div class="container">
     <header class="header">
-      {{#link-to 'index' class="logo"}}<h2>Check out your message Board, baby!</h2>
-      <h3>An Epicodus Project</h3>{{/link-to}}
-    </header>
+      {{#link-to 'index' class="logo"}}<h2>Cultural Connection</h2>
+      <h3>Message Board, baby!</h3>{{/link-to}}
+      <nav role="navigation" class="navigation-mobile">
+        {{#link-to 'index' class="navigation-mobile-link"}}<h4>Home</h4>
+      </nav>
+
+      <nav role="navigation" class="navigation-container">
+        <ul class="navigation navigation-open">
+          <li class="navigation-item navigation-active">
+            {{#link-to 'admin'}}Admin{{/link-to}}
+          </li>
+        </ul>
+      </nav>
+      </header>
   </div>
   {{outlet}}
-  <footer>
-  </footer>
-</div>
+ </div>
