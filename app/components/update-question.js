@@ -8,9 +8,10 @@ export default Ember.Component.extend({
     },
     update(question) {
       var params = {
-        questionTitleView: this.get('questionTitleView')? this.get('questionTitleView') : "",
-        questionAuthorView: this.get('questionAuthorView')? this.get('questionAuthorView') : "",
-        topic: this.get('topic')? this.get('topic') : "",
+        titleListView: this.get('titleListView')? this.get('titleListView') : "",
+        titleDetailView: this.get('titleDetailView')? this.get('titleDetailView') : "",
+        category: this.get('category')? this.get('category') : "",
+        author: this.get('author')? this.get('author') : "",
       };
       this.set('showUpdateForm', false);
       this.sendAction('update', question, params);
