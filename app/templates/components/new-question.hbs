@@ -1,1 +1,25 @@
-{{yield}}
+{{#if addNewQuestion}}
+  <h1>New Question</h1>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="questionTitleView">Question</label>
+        {{input value=questionTitleView id="questionTitleView"}}
+      </div>
+
+      <div class="form-group">
+        <label for="questionAuthorView">Detail View Title</label>
+        {{input value=questionAuthorView id="questionAuthorView"}}
+      </div>
+
+      <div class="form-group">
+        <label for="topic">Topic</label>
+        {{input value=topic id="topic"}}
+      </div>
+
+      <button {{action 'save'}}>Save</button>
+    </form>
+  </div>
+{{else}}
+  <button {{action 'questionFormShow'}}>New Question</button>
+{{/if}}

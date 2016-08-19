@@ -1,1 +1,10 @@
-{{yield}}
+<div class="container">
+  {{#link-to 'question' question.id}}
+    <span class="category-container">{{question.questionTitleView}}</span>
+    <span class="author">{{question.questionAuthorView}}</span>
+    <span class="timestamp">{{question.topic}}</span>
+  {{/link-to}}
+</div>
+
+{{update-question question=question update="update"}}
+<button {{action 'delete' question}}>Delete</button>

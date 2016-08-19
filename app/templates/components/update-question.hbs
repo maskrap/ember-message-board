@@ -1,1 +1,24 @@
-{{yield}}
+{{#if showUpdateForm}}
+  <h4>Update Question: {{article.questionTitleView}}</h4>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="questionTitleView">Question</label>
+        {{input value=questionTitleView id="questionTitleView"}}
+      </div>
+
+      <div class="form-group">
+        <label for="questionAuthorView">Author</label>
+        {{input value=questionAuthorView id="questionAuthorView"}}
+      </div>
+
+      <div class="form-group">
+        <label for="topic">Topic</label>
+        {{input value=topic id="topic"}}
+      </div>
+      <button {{action 'update' question}}>Save</button>
+  </form>
+</div>
+{{else}}
+<button {{action 'showUpdateForm'}}>Update Question</button>
+{{/if}}

@@ -1,5 +1,12 @@
 <div class="wrapper">
+  <br>
 {{#each model as |question|}}
-  {{question-tile question=question}}
+  {{question-tile question=question update="update" destroyQuestion="destroyQuestion"}}
 {{/each}}
+<br>
+<br>
+{{new-question save=save}}
+<br>
 </div>
+
+{{#link-to 'index'}}Index{{/link-to}}
