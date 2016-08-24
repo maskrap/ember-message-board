@@ -1,6 +1,6 @@
+<div>
 {{#if showUpdateForm}}
   <h4>Update Question: {{question.titleListView}}</h4>
-  <div>
     <form>
       <div class="form-group">
         <label for="titleListView">List View Title</label>
@@ -24,7 +24,7 @@
 
       <button {{action 'update' question}}>Save</button>
     </form>
-  </div>
 {{else}}
   <button {{action 'showUpdateForm'}}>Update Question</button>
 {{/if}}
+</div>
