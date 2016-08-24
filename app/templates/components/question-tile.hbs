@@ -1,9 +1,10 @@
-<div class="list-block">
-{{#link-to 'question' question.id}}
-    <span class="category-container">{{question.category}}</span>
-    <h3 class="list-view-title">{{question.titleListView}}</h3>
-    <div class="by-line">
-      <span class="author">{{question.author}}</span>
-    </div>
-{{/link-to}}
+<div class="list-block container">
+  {{#link-to 'question' question.id}}
+      <h3 class="list-view-title">{{question.titleListView}}</h3>
+      <div class="by-line">
+        <span class="author">Author: {{question.author}}</span>
+        <br>
+        <span class="category-container">Category: {{question.category}}</span>
+      </div>
+  {{/link-to}}
 </div>
