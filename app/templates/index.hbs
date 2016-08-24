@@ -1,5 +1,8 @@
+<hr>
 <div class="wrapper">
-{{#each model as |question|}}
-  {{question-tile question=question}}
-{{/each}}
+  {{new-question save="save"}}
+  <h4>Questions:</h4>
+  {{#each model as |question|}}
+    {{question-tile question=question}}
+  {{/each}}
 </div>

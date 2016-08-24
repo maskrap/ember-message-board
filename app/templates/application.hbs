@@ -1,43 +1,12 @@
 <div class="page">
   <div class="container">
-
-  			<header class="header">
-  				{{#link-to 'index' class="logo"}}<h2>Message Board, Baby!</h2>
-          <h3>A Q &amp; A Web App</h3>{{/link-to}}
-  				<nav role="navigation" class="navigation-mobile">
-  					<a href="#" class="navigation-mobile-link">Menu</a>
-  				</nav>
-
-  				<nav role="navigation" class="navigation-container">
-
-  					<ul class="navigation navigation-open">
-  						<li class="navigation-item navigation-active">
-  							{{#link-to 'admin'}}Admin{{/link-to}}
-  						</li>
-  						<li class="navigation-item">
-  							<a href="#">Entertainment</a>
-  						</li>
-  						<li class="navigation-item">
-  							<a href="#">Fashion & Beauty</a>
-  						</li>
-  						<li class="navigation-item">
-  							<a href="#">Lifestyle</a>
-  						</li>
-  						<li class="navigation-item">
-  							<a href="#">Books</a>
-  						</li>
-  						<li class="navigation-item explore">
-  							{{fa-icon "search" class="explore-icon"}}<a href="#">Explore</a>
-  						</li>
-  						<li class="navigation-item about">
-  							<a href="#">About</a>{{fa-icon "caret-down" class="carat-down-icon"}}
-  						</li>
-
-  					</ul>
-  				</nav>
-  			</header>
-  		</div>
-    {{outlet}}
-  <footer>
-  </footer>
+		<header class="header">
+			{{#link-to 'index'}}<h2>Message Board, Baby!</h2>
+      {{/link-to}}
+			<nav role="navigation" class="navigation-mobile">
+				{{#link-to 'admin'}}Admin{{/link-to}}
+			</nav>
+		</header>
+	</div>
+  {{outlet}}
 </div>
