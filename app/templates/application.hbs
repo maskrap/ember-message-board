@@ -1,9 +1,8 @@
 <div class="counter">
-  {{#link-to 'admin' class="admin-link"}}Admin{{/link-to}}
+  {{#link-to 'admin' class="glyphicon glyphicon-user admin-link"}} <span class="font-fam">Admin</span>{{/link-to}}
   {{#link-to 'favorite'}}{{question-counter question-model}}{{/link-to}}
 </div>
-<div class="admin-link">
-</div>
+
 <div class="container page-wrap">
   <div>
 		<header class="header">
@@ -17,6 +16,7 @@
     {{outlet}}
   </div>
   <footer class="footer">
-    <img class="ask-logo" src="http://i.imgur.com/Szk3bft.png">
+    <a href="https://github.com/maskrap/ember-message-board"><img class="github" src="http://i.imgur.com/rqh2nmT.png"></a>
+    <img class="ask-logo" src="http://i.imgur.com/zj3Rc4H.png">
   </footer>
 </div>
