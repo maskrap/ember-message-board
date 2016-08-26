@@ -1,14 +1,15 @@
 <div class="question-body container">
-  <h3 class="list-view-title">{{question.titleDetailView}}</h3>
   <hr>
   <div class="by-line">
-    <h6 class="author">{{question.author}}</h6>
+    <h2>{{question.titleListView}}</h2>
+    <h3 class="list-view-title">{{question.titleDetailView}}</h3>
+    <h5 class="author">{{question.author}}</h5>
     <h5 class="category">{{question.category}}</h5>
+    <button {{action 'addToFav' question}}>Add to Favorites</button>
   </div>
   <div class="body-copy">
     {{question.bodyCopy}}
   </div>
-    <button {{action 'addToFav' question}}>Add to Favorites</button>
 </div>
 
 
