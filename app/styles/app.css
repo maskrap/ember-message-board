@@ -16,4 +16,19 @@ a:link {
     background-color: #4CAF50; /* Green */
     color: black;
 }
-...
+
+.navigation {
+	position: absolute;
+  margin-top: -2%;
+  padding-top: 3%;
+	width:100%;
+  background-color: white;
+  margin-right: -3.5%;
+  letter-spacing: 2px;
+}
+
+.ask-logo {
+  width: 600px;
+  float: left;
+  margin-left: 50%;
+}
