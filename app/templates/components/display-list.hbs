@@ -1,1 +1,6 @@
-{{yield}}
+<h5><button {{action 'empty'}}>Empty list</button></h5>
+
+{{#each favoritesList.questions as |question|}}
+  <li>{{question.titleListView}} by {{question.author}}</li>
+  <button {{action 'remove' question}}>Remove Question</button>
+{{/each}}

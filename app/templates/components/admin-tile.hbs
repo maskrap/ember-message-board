@@ -1,8 +1,10 @@
 <div class="container">
-  <h5>{{question.category}}</h5>
   <h3>{{question.titleListView}}</h3>
+  <h5>Category: {{question.category}}</h5>
   <div class="by-line container">
-    {{question.author}}
+    <p>
+      By:{{question.author}}
+    </p>
   </div>
   {{update-question question=question update="update"}}
   <button {{action 'delete' question}}>Delete</button>
