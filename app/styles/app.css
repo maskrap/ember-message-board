@@ -4,7 +4,7 @@ ul {
 
 a:link {
   text-decoration: none;
-  color: #00A79D;
+  color: ##cf0000;
 }
 
 .button {
@@ -27,8 +27,22 @@ a:link {
   letter-spacing: 2px;
 }
 
+.img-logo {
+  margin-bottom: 1%;
+  margin-top: -3%;
+}
+
 .ask-logo {
   width: 600px;
-  float: left;
   margin-left: 50%;
+}
+
+.counter {
+  float: left;
+  margin-left: 80%;
+}
+
+.admin-link {
+  margin-right: 50%;
+  padding-left: 50%;
 }

@@ -1,12 +1,16 @@
+<div class="counter">
+  {{#link-to 'admin' class="admin-link"}}Admin{{/link-to}}
+  {{question-counter question-model}}
+</div>
+<div class="admin-link">
+</div>
 <div class="container page">
   <div>
 		<header class="header">
 			{{#link-to 'index'}}<img class="img-logo" src="http://i.imgur.com/nYnJ7R3.png">
       {{/link-to}}
 			<nav role="navigation" class="navigation-mobile">
-				{{#link-to 'admin'}}Admin{{/link-to}}
         {{#link-to 'favorite'}}Favorites List{{/link-to}}
-        {{question-counter question-model}}
 			</nav>
 		</header>
 	</div>
