@@ -22,9 +22,9 @@
         {{input value=author id="author"}}
       </div>
 
-      <button {{action 'update' question}}>Save</button>
+      <button class="btn newbtn" {{action 'update' question}}>Save</button>
     </form>
 {{else}}
-  <button {{action 'showUpdateForm'}}>Update Question</button>
+  <button class="btn upbtn" {{action 'showUpdateForm'}}>Update</button>
 {{/if}}
 </div>

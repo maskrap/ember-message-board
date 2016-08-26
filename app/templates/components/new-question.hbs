@@ -3,12 +3,12 @@
     <h1>New Question</h1>
       <form>
         <div class="form-group">
-          <label for="titleListView">List View Title</label>
+          <label for="titleListView">Title</label>
           {{input value=titleListView id="titleListView"}}
         </div>
 
         <div class="form-group">
-          <label for="titleDetailView">Detail View Title</label>
+          <label for="titleDetailView">Description</label>
           {{input value=titleDetailView id="titleDetailView"}}
         </div>
 
@@ -22,7 +22,7 @@
           {{input value=author id="author"}}
         </div>
 
-        <button {{action 'save'}}>Save</button>
+        <button class="btn upbtn" {{action 'save'}}>Save</button>
       </form>
   {{else}}
     <button class="btn newbtn" {{action 'questionFormShow'}}>Ask a Question</button>

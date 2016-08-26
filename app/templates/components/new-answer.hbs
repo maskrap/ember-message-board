@@ -1,4 +1,4 @@
-<h3>Add a answer</h3>
+<h3>Add Answer</h3>
 
 <form>
   <div class="form-group container">
@@ -13,6 +13,6 @@
     <label for="rating">Rate this question (1-5 stars)</label>
     {{input type="number" min="1" max="5" value=rating id="rating"}}
   </div>
-  <button {{action 'saveAnswer'}}>Add a Answer</button>
+  <button class="btn newbtn" {{action 'saveAnswer'}}>Add Answer</button>
 
 </form>

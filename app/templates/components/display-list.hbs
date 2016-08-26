@@ -1,6 +1,7 @@
-<h5><button {{action 'empty'}}>Empty list</button></h5>
+<h5><button class="dellist" {{action 'empty'}}>Delete list</button></h5>
 
 {{#each favoritesList.questions as |question|}}
-  <li>{{question.titleListView}} by {{question.author}}</li>
-  <button class="button" {{action 'remove' question}}>X</button>
+  <li>{{question.titleListView}} <br> by {{question.author}}</li>
+
+  <button class="btn favbtn" {{action 'remove' question}}>X</button>
 {{/each}}

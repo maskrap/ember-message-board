@@ -5,7 +5,7 @@
     <h3 class="list-view-title">{{question.titleDetailView}}</h3>
     <h5 class="author">By: {{question.author}}</h5>
     <h5 class="category">Category: {{question.category}}</h5>
-    <button {{action 'addToFav' question}}>Add to Favorites</button>
+    <button class="upbtn btn" {{action 'addToFav' question}}>Add to Favorites</button>
   </div>
   <div class="body-copy">
     {{question.bodyCopy}}
