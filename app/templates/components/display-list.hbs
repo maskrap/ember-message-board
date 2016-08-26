@@ -2,5 +2,5 @@
 
 {{#each favoritesList.questions as |question|}}
   <li>{{question.titleListView}} by {{question.author}}</li>
-  <button {{action 'remove' question}}>Remove Question</button>
+  <button class="button" {{action 'remove' question}}>X</button>
 {{/each}}

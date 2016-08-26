@@ -2,10 +2,12 @@
 
   {{#link-to 'question' question.id}}
       <h3 class="list-view-title">{{question.titleListView}}</h3>
-      <div class="by-line">
-        <span class="author">By: {{question.author}}</span>
-        <br>
-        <span class="category-container">Category: {{question.category}}</span>
-      </div>
   {{/link-to}}
+  <div class="by-line">
+    <span class="author">By: {{question.author}}</span>
+    <br>
+    <span class="category-container">Category: {{question.category}}</span>
+    <br>
+    <span class="category-container">Responses: {{sortedAnswers}}</span>
+  </div>
 </div>

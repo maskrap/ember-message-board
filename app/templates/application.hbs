@@ -1,21 +1,22 @@
 <div class="counter">
   {{#link-to 'admin' class="admin-link"}}Admin{{/link-to}}
-  {{question-counter question-model}}
+  {{#link-to 'favorite'}}{{question-counter question-model}}{{/link-to}}
 </div>
 <div class="admin-link">
 </div>
-<div class="container page">
+<div class="container page-wrap">
   <div>
 		<header class="header">
 			{{#link-to 'index'}}<img class="img-logo" src="http://i.imgur.com/nYnJ7R3.png">
       {{/link-to}}
 			<nav role="navigation" class="navigation-mobile">
-        {{#link-to 'favorite'}}Favorites List{{/link-to}}
 			</nav>
 		</header>
 	</div>
-  {{outlet}}
+  <div class="outlet-wrap">
+    {{outlet}}
+  </div>
+  <footer class="footer">
+    <img class="ask-logo" src="http://i.imgur.com/Szk3bft.png">
+  </footer>
 </div>
-<footer class="footer">
-  <img class="ask-logo" src="http://i.imgur.com/Szk3bft.png">
-</footer>

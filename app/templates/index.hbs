@@ -1,8 +1,10 @@
 <div class="wrapper container">
   {{new-question save="save"}}
-  <h4>Questions:</h4>
-  {{#each model as |question|}}
-    {{question-tile question=question}}
-    <hr>
-  {{/each}}
+  <div class="question-hold">
+    <h3>Asked Questions:</h3>
+    {{#each model as |question|}}
+      {{question-tile question=question}}
+      <hr>
+    {{/each}}
+  </div>
 </div>
