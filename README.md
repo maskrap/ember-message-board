@@ -1,4 +1,4 @@
-# Ember-message-board
+# Ember - Ask Message Board
 
 Question and Answer Message Board
 Create a question and answer message board where a user submits a question and other users can respond with answers.
@@ -11,10 +11,22 @@ Users should be able to click on a question to view additional information.
 Allow users to add and edit questions.
 Allow users to add answers to a question. Answers should be added and viewed on the same page as the question they respond to.
 
+Continue developing the Question and Answer message board application from last week's independent project and code review by integrating the Ember features and functionality we learned this week.
+
+Implement at least one computed property.
+
+Add a helper.
+
+Integrate a service.
+
+
 ### Objectives
 
 Your code will be reviewed for the following objectives:
 
+* The project contains at least one functioning computed property.
+* A service has been implemented successfully.
+* At least one custom helper is being used to format data.
 * Application template contains header with link(s).
 * Data is stored in and retrieved from Ember Data models and Firebase.
 * Components are used to create display and behavior for your templates.
