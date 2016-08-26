@@ -6,3 +6,14 @@ a:link {
   text-decoration: none;
   color: #00A79D;
 }
+
+.button {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: #4CAF50; /* Green */
+    color: black;
+}
+...

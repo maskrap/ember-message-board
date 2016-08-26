@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
 
-  sortBy: ['titleListView:asc'],
+  sortBy: ['titleListView'],
   sortedQuestions: Ember.computed.sort('questions', 'sortBy'),
 
 });
