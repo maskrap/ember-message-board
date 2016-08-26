@@ -6,6 +6,7 @@ export default Ember.Component.extend({
       var params = {
         name: this.get('name'),
         answer: this.get('answer'),
+        rating: parseInt(this.get('rating')),
         question: this.get('question')
       };
       // console.log(params);
